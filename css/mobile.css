@@ -1,0 +1,35 @@
+:root {
+    --primary-background: #3d3c3c;
+    --text-primary: #cccccc;
+  
+    --avatar-skin: #e0a88a;
+    --avatar-skin-shadow: #dcb9a6;
+    --jacket-primary: #000000;
+    --jacket-secondary: #818181;
+  
+    --tshirt-primary: #ffffff;
+  
+    --beard-shadow: #3f1700;
+    --beard-primary: #6b2e0b;
+    
+    --hair-shadow: #3f1700;
+    --hair-primary: #6b2e0b;
+  
+    --mouth-background: #86173c;
+    --mouth-tongue-primary: #f05858;
+  
+    --eye-background: #202020;
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html{
+    font-size: 62.5%;
+    font-family: "Chakra Petch", sans-serif;
+    scroll-behavior: smooth;
+  }
+ 
