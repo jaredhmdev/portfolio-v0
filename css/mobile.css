@@ -1,35 +1,188 @@
-:root {
-    --primary-background: #3d3c3c;
-    --text-primary: #cccccc;
-  
-    --avatar-skin: #e0a88a;
-    --avatar-skin-shadow: #dcb9a6;
-    --jacket-primary: #000000;
-    --jacket-secondary: #818181;
-  
-    --tshirt-primary: #ffffff;
-  
-    --beard-shadow: #3f1700;
-    --beard-primary: #6b2e0b;
-    
-    --hair-shadow: #3f1700;
-    --hair-primary: #6b2e0b;
-  
-    --mouth-background: #86173c;
-    --mouth-tongue-primary: #f05858;
-  
-    --eye-background: #202020;
-  }
-  
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
+/*
+Filename: mobile.css
+Purpouse: Stylesheet for mobile devices, focused on mobile first methodology
+Author: Jared Hernández Moreno
+Created: October 11th, 2021
+LastUpdated: ---
+*/
 
-  html{
-    font-size: 62.5%;
-    font-family: "Chakra Petch", sans-serif;
-    scroll-behavior: smooth;
-  }
- 
+:root {
+  /*PAGE COLORS CUSTOMAZATION*/
+  --page-bg-primary-color: #2b2b2b;
+  --page-bg-secondary-color: #d4d4d4;
+
+  --header-bg-primary-color:#4d0e55c5;
+  --text-primary-color: #cccccc;
+
+  /*AVATAR COLORS CUSTOMAZATION*/
+  --avatar-canvas-background: transparent;
+  /* --avatar-frame: transparent; */
+  --avatar-frame: #a83f3f;
+  --avatar-skin: #e0a88a;
+  --avatar-skin-shadow: #dcb9a6;
+
+  --beard-shadow: #3f1700;
+  --beard-primary: #6b2e0b;
+
+  --hair-shadow: #3f1700;
+  --hair-primary: #6b2e0b;
+
+  --mouth-background: #86173c;
+  --mouth-tongue-primary: #f05858;
+
+  --eye-background: #202020;
+  --jacket-primary: #000000;
+  --jacket-secondary: #818181;
+
+  --tshirt-primary: #ffffff;
+}
+
+/* ------------- INIT STYLES SECTION-----------------*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Prompt", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--page-bg-primary-color);
+  color: var(--text-primary-color);
+}
+
+/* ------------- PAGE STRUCTURE STYLES SECTION-----------------*/
+
+.header-container {
+  display: flex;
+  position: fixed;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  justify-content: space-between;
+  background-color: var(--header-bg-primary-color);
+  z-index: 1000;
+}
+
+.tagname-container{
+  position: relative;
+  left: 5vmin;
+}
+
+.tagname{
+  font-size: 1.4rem;
+}
+
+
+
+.main-index-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  top: 10vh;
+  height: 90vh;
+  width: 100%;
+}
+
+/* ------------- AVATAR STYLES SECTION-----------------*/
+
+.avatar-container {
+  position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  height: 50vh;
+  width: 100%;
+}
+.avatar-canvas {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--avatar-canvas-background);
+  width: 100%;
+}
+
+.avatar-frame {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  width: 80vmin;
+  height: 80vmin;
+  border-radius: 50%;
+  background: var(--avatar-frame);
+}
+
+.presentation-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+}
+
+.name-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding-top: 10vmin;
+}
+
+.name-container__firstname{
+  font-size: 4.4rem;
+}
+
+.name-container__lastname{
+  font-size: 2.5rem;
+}
+
+.title-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.title-container__title{
+  font-size: 2.0rem;
+  font-weight: 400;
+}
+
+.quote-container{
+  position: relative;
+}
+.quote{
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: italic;
+}
+
+.aboutme-cointainer{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  top: 10vh;
+  height: 100vh;
+  width: 100%;
+  background-color: var(--page-bg-secondary-color);
+}

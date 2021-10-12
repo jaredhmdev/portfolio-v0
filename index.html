@@ -5,85 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="./css/mobile.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 750px)">
+    <link rel="stylesheet" href="./css/desktop.css" media="(min-width: 900px)">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
       <div class="header-container">
-        <p class="tagname">JaredHMDev</p>
+        <div class="tagname-container">
+          <p class="tagname">JaredHMDev</p>
+        </div>
+        <div class="nav-container">
+          <nav>
+            <ul class="nav-list">
+              <li class="nav-item">A</li>
+              <li class="nav-item">B</li>
+              <li class="nav-item">C</li>
+              <li class="nav-item">D</li>
+            </ul>
+          </nav>
+        </div>
       </div>
-      <nav>
-        <div class="nav-container"></div>
-      </nav>
     </header>
     <main>
-      <div class="main-container">
-        <div class="presentation-container">
-          <div class="name-container">
-            <h1 class="name-container__firstname">JARED</h1>
-            <h2 class="name-container__lastname name-container__lastname--father">HERNÁNDEZ</h2>
-            <h2 class="name-container__lastname name-container__lastname--mother">MORENO</h2>
-          </div>
-          <div class="title-container">
-              <h3 class="title-container__title">Software Engineer</h3>
-          </div>
-        </div>
-        <div class="avatar-container">
+      <section class="presentation">
+        <div class="main-index-container">
+          <div class="avatar-container">
             <div class="avatar-canvas">
-                <div class="avatar-frame">
-                    <div class="avatar">
-                        <div class="avatar-hair">
-                          <div class="avatar-hair--layer1"></div>
-                        </div>
-                        <div class="avatar-head">
-                            <div class="avatar-head__eyes">
-                              <div class="avatar-head__eyebrow avatar-head__eyebrow--left"></div>
-                              <div class="avatar-head__eyebrow avatar-head__eyebrow--right"></div>
-                                <div class="avatar-head__eye avatar-head__eye--left"></div>
-                                <div class="avatar-head__eye avatar-head__eye--right"></div>
-                            </div>
-                            <div class="avatar-head__nose">
-                             <div class="avatar-head__nose--layer1"></div>
-                            </div>
-                            <div class="avatar-head__beard">
-                              <div class="avatar-head__beard--layer1"></div>
-                            </div>
-                            <div class="avatar-head__mouth">
-                              <div class="avatar-head__mouth--layer1"></div>
-                            </div>
-                        </div>
-                        <div class="avatar-neck">
-                            <div class="avatar-neck--top"></div>
-                            <div class="avatar-neck--bottom"></div>
-                            <div class="avatar-backhair">
-                              <div class="avatar-backhair--layer1"></div>
-                            </div>
-                        </div>
-                        <div class="avatar-clothes">
-                            <div class="avatar-clothes__tshirt">
-                                <div class="avatar-clothes__tshirt--layer1"></div>
-                            </div>
-                            <div class="avatar-clothes__jacket">
-                                <div class="avatar-clothes__jacket--layer1"></div>
-                            </div>
-                        </div>
+              <div class="avatar-frame">
+                <div class="avatar">
+                  <div class="avatar-hair">
+                    <div class="avatar-hair--layer1"></div>
+                  </div>
+                  <div class="avatar-head">
+                    <div class="avatar-head__eyes">
+                      <div
+                        class="avatar-head__eyebrow avatar-head__eyebrow--left"
+                      ></div>
+                      <div
+                        class="avatar-head__eyebrow avatar-head__eyebrow--right"
+                      ></div>
+                      <div class="avatar-head__eye avatar-head__eye--left"></div>
+                      <div class="avatar-head__eye avatar-head__eye--right"></div>
                     </div>
+                    <div class="avatar-head__nose">
+                      <div class="avatar-head__nose--layer1"></div>
+                    </div>
+                    <div class="avatar-head__beard">
+                      <div class="avatar-head__beard--layer1"></div>
+                    </div>
+                    <div class="avatar-head__mouth">
+                      <div class="avatar-head__mouth--layer1"></div>
+                    </div>
+                  </div>
+                  <div class="avatar-neck">
+                    <div class="avatar-neck--top"></div>
+                    <div class="avatar-neck--bottom"></div>
+                    <div class="avatar-backhair">
+                      <div class="avatar-backhair--layer1"></div>
+                    </div>
+                  </div>
+                  <div class="avatar-clothes">
+                    <div class="avatar-clothes__tshirt">
+                      <div class="avatar-clothes__tshirt--layer1"></div>
+                    </div>
+                    <div class="avatar-clothes__jacket">
+                      <div class="avatar-clothes__jacket--layer1"></div>
+                    </div>
+                  </div>
                 </div>
+              </div>
             </div>
+          </div>
+          <div class="presentation-container">
+            <div class="name-container">
+              <h1 class="name-container__firstname">JARED</h1>
+              <h2 class="name-container__lastname">HERNÁNDEZ MORENO</h2>
+              <div class="title-container">
+                <h3 class="title-container__title">Software Engineer</h3>
+              </div>
+            </div>
+            <div class="quote-container">
+              <p class="quote">"An Engineer related with Tech<br/> must never stop learning new stuffs."</p>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section class="aboutme">
+        <div class="aboutme-cointainer">
+
+        </div>
+      </section>
+      <section class="experience">
+        <div class="experince-cointainer">
+
+        </div>
+      </section>
+      <section class="skills">
+        <div class="skills-cointainer">
+
+        </div>
+      </section>
+      <section class="challenges">
+        <div class="challenges-cointainer">
+          
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="projects-cointainer">
+          
+        </div>
+      </section>
+      <section class="contactme">
+        <div class="contactme-cointainer">
+
+        </div>
+      </section>
     </main>
   </body>
 </html>
