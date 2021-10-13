@@ -16,7 +16,6 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
 <body>
   <header>
     <div class="header-container">
@@ -32,12 +31,12 @@
           <div class="menu__elements">
             <nav>
               <ul class="menu__list">
-                <li class="menu__item">Home</li>
-                <li class="menu__item">About Me</li>
-                <li class="menu__item">Skills</li>
-                <li class="menu__item">Challenges Accomplished</li>
-                <li class="menu__item">Projects</li>
-                <li class="menu__item">Contact Me</li>
+                <li class="menu__item"><a href="#presentation" class="menu__link" onclick="resetMenu()">Home</a></li>
+                <li class="menu__item"><a href="#aboutme" class="menu__link" onclick="resetMenu()" >About Me</a></li>
+                <li class="menu__item"><a href="" class="menu__link" onclick="resetMenu()">Skills</a></li>
+                <li class="menu__item"><a href="" class="menu__link" onclick="resetMenu()">Challenges Accomplished</a></li>
+                <li class="menu__item"><a href="" class="menu__link" onclick="resetMenu()">Projects</a></li>
+                <li class="menu__item"><a href="" class="menu__link" onclick="resetMenu()">Contact Me</a></li>
               </ul>
             </nav>
           </div>
@@ -46,7 +45,7 @@
     </div>
   </header>
   <main>
-    <section class="presentation">
+    <section id="presentation" class="presentation">
       <div class="main-index-container">
         <div class="avatar-container">
           <div class="avatar-canvas">
@@ -106,7 +105,7 @@
       </div>
     </section>
 
-    <section class="aboutme">
+    <section id="aboutme"class="aboutme">
       <div class="aboutme-cointainer">
 
       </div>
@@ -138,6 +137,7 @@
       </div>
     </section>
   </main>
+  <script src="./js/menu.js" type="text/javascript"></script>
 </body>
 
 </html>
