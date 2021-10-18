@@ -18,10 +18,11 @@ LastUpdated: ---
   --menu-speed: 1.5s;
   /*AVATAR COLORS CUSTOMAZATION*/
   --avatar-canvas-background: transparent;
-  /* --avatar-frame: transparent; */
-  --avatar-frame: #a83f3f;
-  --avatar-skin: #e0a88a;
-  --avatar-skin-shadow: #dcb9a6;
+  --avatar-frame: #4d0e55;
+  /* --avatar-frame: #a83f3f; */
+
+  --avatar-skin: #dcb9a6;
+  --avatar-skin-shadow: #e0a88a;
 
   --beard-shadow: #3f1700;
   --beard-primary: #6b2e0b;
@@ -255,11 +256,366 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  width: 80vmin;
-  height: 80vmin;
+  width: 60vmin;
+  height: 60vmin;
   border-radius: 50%;
   background: var(--avatar-frame);
 }
+
+.avatar{
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  position:relative;
+  height: 60vmin;
+}
+
+ .avatar-head {
+  position: relative;
+  height: 37vmin;
+  width: 34vmin;
+  top: -5vmin;
+  left: 2vmin;
+  background-color: var(--avatar-skin-shadow);
+  border-radius: 50%;
+  z-index: 5;
+} 
+
+.avatar-head::after {
+  position: absolute;
+  content: "";
+  height: 37vmin;
+  width: 34vmin;
+  left: -2vmin;
+  background-color: var(--avatar-skin);
+  border-radius: 50%;
+  z-index: 5;
+} 
+
+.avatar-head__eyes {
+  position: absolute;
+  left: 5vmin;
+  top: 14vmin;
+}
+
+.avatar-head__eyebrow{
+  position: absolute;
+  content: "";
+  height: 2vmin;
+  width: 5vmin;
+  top:-3vmin;
+  border-radius: 40%;
+  background-color: var(--hair-primary);
+  z-index: 70;
+}
+
+.avatar-head__eyebrow--left{
+left: 0vmin;
+transform: rotate(10deg);
+}
+
+.avatar-head__eyebrow--right{
+
+  left: 8vmin;
+  transform: rotate(-10deg);
+}
+
+.avatar-head__eye {
+  position: absolute;
+  content: "";
+  height: 6vmin;
+  width: 4vmin;
+  background-color: var(--eye-background);
+  border-radius: 35%;
+  z-index: 70;
+}
+
+.avatar-head__eye::after {
+  position: absolute;
+  content: "";
+  height: 3vmin;
+  width: 2vmin;
+  background-color: white;
+  border-radius: 35%;
+  z-index: 70;
+}
+
+
+.avatar-ears--layer1{
+  position: absolute;
+  width:6vmin;
+  height: 13vmin; 
+  top:10vmin;
+  left: 26vmin;
+  background-color: var(--avatar-skin);
+  border-top-left-radius: 3vmin;
+  border-bottom-left-radius: 3vmin;
+  
+  box-shadow: -0.3vmin -0.3vmin 3px 1px var(--avatar-skin-shadow);
+  transform: rotate(180deg);
+  z-index: 70;
+}
+
+.avatar-ears--layer1::after{
+  position: absolute;
+  content: "";
+  width:3vmin;
+  height: 5vmin; 
+  top:1vmin;
+  left: 1vmin;
+
+  background-color: var(--avatar-skin-shadow);
+  border-top-left-radius: 2vmin;
+  border-bottom-left-radius: 1vmin;
+  
+  z-index: 70;
+}
+
+.avatar-head__eye--right {
+  left: 9vmin;
+}
+
+.avatar-head__nose{
+  position: absolute;
+}
+
+.avatar-head__nose--layer1 {
+  position: absolute;
+  content: "";
+  top: 20vmin;
+  left: 8vmin;
+  border-left: 2vmin solid transparent;
+  border-right: 2vmin solid transparent;
+  border-bottom: 2vmin solid var(--avatar-skin-shadow);
+  z-index: 50;
+}
+
+.avatar-head__nose--layer1::before {
+  position: absolute;
+  content: "";
+  left: -4.5vmin;
+  top: 1vmin;
+  border-left: 4vmin solid transparent;
+  border-right: 4vmin solid transparent;
+  border-bottom: 4vmin solid var(--avatar-skin);
+  z-index: 50;
+}
+
+.avatar-head__beard--layer1 {
+  position: absolute;
+  content: "";
+  height: 14vmin;
+  width: 36vmin;
+  top: 23.5vmin;
+  left: -2vmin;
+  background-color: var(--beard-shadow);
+  border-bottom-right-radius: 180px;
+  border-bottom-left-radius: 180px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  z-index: 70;
+}
+
+.avatar-head__beard--layer1::after {
+  position: absolute;
+  content: "";
+  height: 12vmin;
+  width: 34vmin;
+
+  background-color: var(--beard-primary);
+  border-bottom-right-radius: 180px;
+  border-bottom-left-radius: 180px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  z-index: 70;
+}
+
+ 
+.avatar-head__mouth--layer1 {
+  position: absolute;
+  content: "";
+  height: 7vmin;
+  width: 17vmin;
+  top: 25vmin;
+  left: 4vmin;
+  background-color: var(--mouth-background);
+  border-bottom-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 30px;
+  z-index: 70;
+}
+
+.avatar-head__mouth--layer1:before {
+  position: absolute;
+  content: "";
+  height: 5vmin;
+  width: 11vmin;
+  top: 2vmin;
+  left: 3vmin;
+  background-color: var(--mouth-tongue-primary);
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 70px;
+  z-index: 70;
+}
+
+.avatar-hair{
+    position: relative;
+  }
+  
+  .avatar-hair--layer1{
+    position: absolute;
+    content: "";
+    width: 8vmin;
+    height: 8vmin;
+    left: -1vmin;
+    top: -5vmin;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow:
+    -4vmin -7vmin 0px 1px var(--hair-shadow),
+    -4vmin -11vmin 0px 1px var(--hair-shadow),
+    -1vmin -15vmin 0px 1px var(--hair-shadow),
+    3vmin -19vmin 0px 1px var(--hair-shadow),
+    6vmin -21vmin 0px 1px var(--hair-shadow),
+    11vmin -22vmin 0px 1px var(--hair-shadow),
+    16vmin -22vmin 0px 1px var(--hair-shadow),
+    21vmin -21vmin 0px 1px var(--hair-shadow),
+    26vmin -20vmin 0px 1px var(--hair-shadow),
+    30vmin -18vmin 0px 1px var(--hair-shadow),
+    31vmin -16vmin 0px 1px var(--hair-shadow),
+    32vmin -14vmin 0px 1px var(--hair-shadow),
+    33vmin -11vmin 0px 1px var(--hair-shadow),
+    33vmin -8vmin 0px 1px var(--hair-shadow),
+    33vmin -5vmin 0px 1px var(--hair-shadow),
+    33vmin -1vmin 0px 1px var(--hair-shadow),
+    33vmin 2vmin 0px 1px var(--hair-shadow),
+    33vmin 4vmin 0px 1px var(--hair-shadow),
+    33vmin 7vmin 0px 1px var(--hair-shadow),
+    33vmin 10vmin 0px 1px var(--hair-shadow),
+    32vmin 13vmin 0px 1px var(--hair-shadow);
+  
+    z-index: 80;
+  }
+  
+  .avatar-hair--layer1::before{
+    position: absolute;
+    content: "";
+    width: 6vmin;
+    height: 6vmin;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow:
+    -4vmin -7vmin 0px 1px var(--hair-primary),
+    -4vmin -11vmin 0px 1px var(--hair-primary),
+    -1vmin -15vmin 0px 1px var(--hair-primary),
+    3vmin -19vmin 0px 1px var(--hair-primary),
+    6vmin -21vmin 0px 1px var(--hair-primary),
+    11vmin -22vmin 0px 1px var(--hair-primary),
+    16vmin -22vmin 0px 1px var(--hair-primary),
+    21vmin -21vmin 0px 1px var(--hair-primary),
+    26vmin -20vmin 0px 1px var(--hair-primary),
+    30vmin -18vmin 0px 1px var(--hair-primary),
+    31vmin -16vmin 0px 1px var(--hair-primary),
+    32vmin -14vmin 0px 1px var(--hair-primary),
+    33vmin -11vmin 0px 1px var(--hair-primary),
+    33vmin -8vmin 0px 1px var(--hair-primary),
+    33vmin -5vmin 0px 1px var(--hair-primary),
+    33vmin -1vmin 0px 1px var(--hair-primary),
+    33vmin 2vmin 0px 1px var(--hair-primary),
+    33vmin 4vmin 0px 1px var(--hair-primary),
+    33vmin 7vmin 0px 1px var(--hair-primary),
+    33vmin 10vmin 0px 1px var(--hair-primary),
+    32vmin 13vmin 0px 1px var(--hair-primary);
+  }
+  
+.avatar-backhair--layer1{
+    position: absolute;
+    content: "";
+    left: 13vmin;
+    top: 35vmin;
+    width: 7vmin;
+    height: 7vmin;
+    background-color: transparent;
+    border-radius: 50%;
+    box-shadow:
+    -13vmin 3vmin 0px 1px var(--hair-shadow),
+    -9vmin 5vmin 0px 1px var(--hair-shadow),
+    -1vmin 5vmin 0px 1px var(--hair-shadow),
+    9vmin 5vmin 0px 1px var(--hair-shadow),
+    15vmin 4vmin 0px 1px var(--hair-shadow),
+    21vmin 0vmin 0px 1px var(--hair-shadow);
+    z-index: 1;
+}
+  .avatar-neck--top {
+    position: absolute;
+    height: 7vmin;
+    width: 12vmin;
+    top: 40vmin;
+    left: 13vmin;
+    background-color: var(--avatar-skin-shadow);
+    z-index: 4;
+  }
+  
+  .avatar-neck--top::after {
+    position: absolute;
+    content: "";
+    height: 7vmin;
+    width: 13vmin;
+  left: -3vmin;
+    background-color: var(--avatar-skin);
+    z-index: 20;
+  }
+
+  .avatar-neck--bottom {
+    position: absolute;
+    top: 47vmin;
+    left: 10vmin;
+    border-left: 7vmin solid transparent;
+    border-right: 8vmin solid transparent;
+    border-top: 8vmin solid var(--avatar-skin-shadow);
+    z-index: 20;
+  }
+
+  .avatar-neck--bottom::after {
+    position: absolute;
+    content: "";
+    top:-8vmin;
+    left: -7vmin;
+    border-left: 6vmin solid transparent;
+    border-right: 7vmin solid transparent;
+    border-top: 7vmin solid var(--avatar-skin);
+    z-index: 20;
+  }
+
+  .avatar-clothes__tshirt--layer1 {
+    position: absolute;
+    top: 45vmin;
+    left:4.5vmin;
+    border-left: 13vmin solid transparent;
+    border-right: 13vmin solid transparent;
+    border-top: 13vmin solid var(--tshirt-primary);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 3;
+  }
+
+  .avatar-clothes__jacket--layer1 {
+    position: absolute;
+    width: 43vmin;
+    height: 14vmin;
+    top: 46vmin;
+    left: -4vmin;
+    background-color: var(--jacket-primary);
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    z-index: 1;
+  }
+  .avatar-canvas > *{
+    transform: scale(1.4);
+  }
 
 /* ------------- PRESENTATION STYLES SECTION -----------------*/
 

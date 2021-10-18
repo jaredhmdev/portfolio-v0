@@ -1,4 +1,12 @@
-.avatar-frame {
-    width: 60vmin;
-    height: 60vmin;
-  }
+.avatar-container{
+  top: 5vmin;
+}
+
+.presentation-container{
+  top: 5vmin;
+}
+
+.avatar-canvas > *{
+  transform: scale(1);
+}
+

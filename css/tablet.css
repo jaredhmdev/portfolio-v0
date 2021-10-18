@@ -1,0 +1,12 @@
+.avatar-container{
+    top: 7vmin;
+  }
+  
+  .presentation-container{
+    top: 7vmin;
+  }
+
+  .avatar-canvas > *{
+    transform: scale(1);
+  }
+  
