@@ -13,6 +13,7 @@ LastUpdated: ---
 
   --header-bg-primary-color:#4d0e55;
   --text-primary-color: #cccccc;
+  --text-secondary-color: #2b2b2b;
 
 
   --menu-speed: 1.5s;
@@ -672,7 +673,86 @@ transform: rotate(10deg);
   font-style: italic;
 }
 
+/* ABOUT ME SECTION  */
+
 .aboutme{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  top: 10vh;
+  height: auto;
+  width: 100%;
+  background-color: var(--page-bg-secondary-color);
+}
+
+.aboutme-card{
+  margin: 10px;
+}
+
+.aboutme-card__body{
+  padding: 15px;
+  border: 1px solid var(--page-bg-primary-color);
+ 
+}
+
+.aboutme-card__copy{
+  padding-bottom: 15px;
+  color: var(--page-bg-primary-color);
+  font-size: 1.8rem;
+}
+.aboutme-card__title{
+  padding-top: 80px;
+  padding-bottom: 40px;
+  color: var(--text-secondary-color);
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+.aboutme-card__photo{
+  padding-top: 25px;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+.aboutme-card__photo ~ figcaption{
+ color: var(--text-secondary-color);
+ text-align: center;
+}
+
+.aboutme-card__footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 25px;
+  padding-bottom: 40px;
+}
+
+.aboutme-card__footercopy{
+  padding-bottom: 15px;
+  color: var(--page-bg-primary-color);
+  font-size: 1.4rem;
+}
+
+.aboutme-card__link{
+  height: 40px;
+  width: 150px;
+  margin: 0 auto;
+  padding: 10px 37px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+  border-radius: 4px;
+  color: var(--text-primary-color);
+  background-color: var(--header-bg-primary-color);
+}
+
+/* SKILLS SECTION  */
+
+.skills{
   position: relative;
   display: flex;
   flex-direction: column;
@@ -681,5 +761,37 @@ transform: rotate(10deg);
   top: 10vh;
   height: 100vh;
   width: 100%;
-  background-color: var(--page-bg-secondary-color);
+  background-color: var(--page-bg-primary-color);
 }
+
+.skills-container{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.skills__title{
+  padding-top: 80px;
+    color: var(--text-primary-color);
+    font-size: 3.6rem;
+    text-align: center;
+  }
+
+.skills-group{
+  position: relative;
+  height: auto;
+  width: 100%;
+  margin-top: 30px;
+}
+
+.skills-group__header{
+padding: 15px;
+}
+
+.skills-group__name{
+  font-size: 2.3rem;
+  font-weight: 500;
+}
+
